@@ -32,7 +32,7 @@ export class BookDetailPage {
     console.log('ionViewWillEnter');
     this.bookId=this.navParams.get("bookId");
     console.log(this.bookId);
-    this.bookRest.getBookList().subscribe( data =>{
+    this.bookRest.getbooklist().subscribe( data =>{
         this.book=data.filter(book=> book.bookid === this.bookId)[0];
 
     }
